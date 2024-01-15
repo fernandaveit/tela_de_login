@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+
+<body class="p-0 m-0 min-h-screen font-archivo flex justify-center items-center">
+    <main class="flex">
+
+        <section class="bg-verde-fundo hidden 2xl:flex items-center w-1/2 px-6 py-28 md:px-44 md:py-52 2xl:px-72 2xl:py-52">
+            <img src="./assets/imagem.png" width="500px" height="421px">
+        </section>
+
+        <section class="bg-white flex flex-col gap-6 justify-center 2xl:w-1/2 px-6 py-28 md:px-44 md:py-52 2xl:px-72 2xl:py-52">
+            <div class="text-left">
+                <h3 class="font-medium text-base md:text-xl">Bem-vindo de volta</h3>
+                <h1 class="font-semibold text-2xl mb-10 md:text-3xl">Faça login na sua conta</h1>
+            </div>
+            <form>
+                <label class="font-normal text-sm text-gray-700 md:text-lg" for="email">E-mail</label>
+                <input class="text-sm w-full mt-3 mb-8 pl-4 rounded border py-2 shadow bg-verde-inputs focus:outline-none focus:bg-slate-50 hover:bg-slate-50" id="email" type="email" placeholder="Digite seu endereço de email">                    
+                
+                <label class="font-normal text-sm text-gray-700 md:text-lg" for="password">Senha</label>
+                <input class="text-sm w-full mt-3 mb-6 pl-4 rounded border py-2 shadow bg-verde-inputs focus:outline-none focus:bg-slate-50 hover:bg-slate-50" id="password" type="password" minlength="4" placeholder="Digite sua senha">                    
+               
+                <div class="flex pb-14 justify-between">
+                    <div class="flex gap-2 items-center custom-checkbox">
+                        <input id="lembre" name="lembre" type="checkbox">
+                        <label for="lembre" class="font-medium text-sm md:text-base">Lembre de mim</label>
+                    </div>    
+                    <a class="text-verde-principal font-medium text-sm md:text-base justify-self-end" id="recupera" href="#">Esqueceu sua senha?</a>    
+                </div>
+
+                <button class="text-white font-semibold bg-verde-principal w-full py-2 rounded h-11 mb-8 text-base md:text-lg" type="submit" id="enviar">Entrar na conta</button>
+                <button class="text-white font-semibold bg-black w-full flex justify-center items-center gap-3 py-2 rounded h-11 mb-16 text-base md:text-lg" type="button">
+                    <img src="./assets/iconGoogle.png" width="16px" height="16px">
+                    <p>Ou faça login no Google</p>
+                </button>
+
+                <div class="flex text-center justify-center gap-1 font-medium text-base md:text-xl">
+                    <p>Não tem uma conta?</p> <a class="text-verde-principal" href="#">Cadastre-se</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

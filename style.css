@@ -1,0 +1,14 @@
+.custom-checkbox input{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #E8E8E8;
+    border-radius: 100%;
+    background-color: #F7FAFC;
+
+}
+
+.custom-checkbox input:checked{
+    appearance: auto;
+
+}
